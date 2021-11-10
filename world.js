@@ -3,6 +3,10 @@ window.addEventListener('load', () => {
     let sanitizeUrl;
     let sanitizeVal;
 
+    document.getElementById("country").className += " load";
+    document.getElementById("lookup").className += " load";
+    document.getElementById("citylookup").className += " load";
+
     let heading = document.querySelector("header h1");
     heading.style.color = "#fff";
     heading.style.transition = "all 2s ease-in-out";

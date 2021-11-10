@@ -62,6 +62,12 @@ main {
 
 input {
     height: 2em;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 }
 
 div#result {
@@ -81,11 +87,23 @@ div#btns button {
 #lookup {
     background: rgb(55, 179, 131);
     color: white;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 }
 
 #citylookup {
     background: rgb(67, 131, 214);
     color: white;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
 }
 
 div#btns button:hover {
@@ -121,4 +139,16 @@ table tr:nth-child(even) {
 
 table tr:hover {
     background-color: rgb(235, 235, 235);
+}
+
+#country.load {
+    opacity: 1;
+}
+
+#lookup.load {
+    opacity: 1;
+}
+
+#citylookup.load {
+    opacity: 1;
 }
